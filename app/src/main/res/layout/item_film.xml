@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_film"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:elevation="10dp"
-        app:cardCornerRadius="1bm0dp">
+        app:cardCornerRadius="10dp">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -44,7 +47,7 @@
                     android:padding="10dp"
                     android:textColor="#fff"
                     android:textSize="18sp"
-                    android:textStyle="italic"
+                    android:fontFamily="@font/psbi"
                     tools:text="Judul Film" />
 
             </RelativeLayout>

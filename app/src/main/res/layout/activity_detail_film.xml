@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFilmActivity">
+    
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:background="@color/colorPrimary"
+        android:scaleType="centerCrop"/>
+    
+    <ImageView
+        android:id="@+id/layer_hitam"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#000"
+        android:alpha="0.3"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/layer_hitam"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@color/colorPrimaryDark"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/img_background"
+        android:layout_toRightOf="@id/cv_poster"
+        tools:text="Judul Film"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv_tahun_rilis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_judul"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/cv_poster"
+        tools:text="(Tahun Rilis Film)"
+        android:text="(2019)"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv_gambaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_poster"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Sinopsis"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/tv_gambaran">
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Deskripsi Film"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/psr" />
+    </ScrollView>
+
+
+</RelativeLayout>

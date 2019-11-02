@@ -41,8 +41,10 @@ class FilmAdapter internal constructor(private val context : Context) : BaseAdap
         private val imgBackground : ImageView = view.findViewById(R.id.img_background)
 
         internal fun bind(film : Film){
+            // Set Value
             tvJudul.text = film.judul
             Glide.with(context).load(film.poster).into(imgBackground)
+
         }
     }
 }

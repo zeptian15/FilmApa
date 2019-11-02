@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FilmApa</string>
+
+    <array name="data_judul">
+        <item>Preman Pensiun</item>
+    </array>
+    
+    <array name="data_poster">
+        <item>@drawable/poster_preman</item>
+    </array>
+</resources>
